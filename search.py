@@ -1,14 +1,16 @@
 from json import loads
-from Verse import Verse
+from string import punctuation
 
-def find_word():
+from filemanip import normalize_str, compare_normalized
+
+from Reference import Reference
+
+def find_word(R, word):
+    text = R.text
+    if word in text:
+        print(word)
+        print(R.reference)
     return
-def get_data(fname):
-    with open(fname, 'r') as f:
-        raw = f.read()
-    return raw
-    #return loads(raw)
 
-#if __name__ == '__main__':
-#raw = get_data('book-of-mormon.json')
-#print(raw[:5])
+if __name__ == '__main__':
+    return
