@@ -1,12 +1,17 @@
+from clean import clean_text
+
 class Reference:
-    def __init__(self, reference, text = []):
+    def __init__(self, reference, text = [], flag=''):
         self.reference = reference
         self.text = text.split(' ')
+        self.flag = flag
 
 class Word_Count:
 
-    def __init__(self, word, reference, count):
-
+    def __init__(self, word, words = []):
+        self.word = word
+        self.words = []
+        self.count = len(words)
         return
 
 def make_references(data):
