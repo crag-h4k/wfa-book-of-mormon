@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 from filemanip import normalize_str, compare_normalized
 from get_data import get_raw_verses, get_data
-from Reference import Reference
+from Reference import Reference, make_references
 
 def find_valid_refs(Rs, flag):
     valid_refs = []
